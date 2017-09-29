@@ -74,6 +74,32 @@ export default class extends wepy.app {
       backgroundTextStyle: 'dark',
       backgroundColor: '#F5F5F5',
       navigationBarBackgroundColor: '#1296db'
+    },
+    tabBar: {
+      color: '#666666',
+      selectedColor: '#1296db',
+      borderStyle: 'white',
+      backgroundColor: '#FAFAFA',
+      list: [
+        {
+          iconPath: 'images/tab/discover.png',
+          selectedIconPath: 'images/tab/discover-active.png',
+          pagePath: 'pages/home/home',
+          text: '发现'
+        },
+        {
+          iconPath: 'images/tab/order.png',
+          selectedIconPath: 'images/tab/order-active.png',
+          pagePath: 'pages/home/home',
+          text: '订单'
+        },
+        {
+          iconPath: 'images/tab/user.png',
+          selectedIconPath: 'images/tab/user-active.png',
+          pagePath: 'pages/home/home',
+          text: '我的'
+        }
+      ]
     }
   };
   globalData = {
